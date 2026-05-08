@@ -30,7 +30,11 @@ This project outlines the implementation of File Sharing and Permissions within 
 <img width="2287" height="1223" alt="LAB7-CONFIGURINGFILESHAREPERMS" src="https://github.com/user-attachments/assets/bf3405f2-a7b4-4e2c-a2aa-5ca3743758d5" />
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+- Remoted into both the Client-1 Virtual Machine and the Domain-Controller Virtual Machine using Remote Desktop Connection. Used the public IP address given to each respective Virtual Machine to sign in, signing into Domain-Controller with a domain administrator account and Client-1 with a non-administrator domain account.
+  
+- Created multiple shared folders on the C:\ drive of Domain-Controller to simulate different access levels. Configured folder sharing and NTFS permissions to control access for different security groups such as "Domain Users" and "Domain Admins", assigning different levels of access to each such as "read-only" and "read/write" to demonstrate role-based file share permissions in a domain environment.
+
 </p>
 <br />
 
@@ -38,7 +42,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img width="1729" height="1002" alt="LAB7-PERMTESTCLIENT" src="https://github.com/user-attachments/assets/95cc62fd-9363-438c-9866-e2d404f4e756" />
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+- On Client-1 Virtual Machine, as a non-administrator domain account accessed the shared folders on Domain-Controller using the network path (\\Domain-Controll). Tested access to each shared folder to validate the configured permissions. Confirmed that the access levels behaved as configured for each folder, demonstrating the proper enforcement of access controls in the domain.
+
 </p>
 <br />
 
@@ -46,7 +52,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img width="2287" height="1223" alt="LAB7-ACCOUNTANTSETUP" src="https://github.com/user-attachments/assets/1aa4d42b-583b-4802-b5d4-97b025a4fd67" />
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+- On Domain-Controller Virtual Machine, as a domain administrator added and configured a security group called "ACCOUNTANTS" inside of Active Directory Users and Groups. On the accounting folder within the C:\ drive, configured sharing properties and added the group "ACCOUNTANTS" and gave Read/Write permissions.
+
 </p>
 <br />
 
