@@ -73,7 +73,7 @@ This project outlines the implementation of File Sharing and Permissions within 
 </p>
 <p>
 
--On Domain-Controller Virtual Machine, add the non-administrator domain user (baboro.Jim in this case) within the "ACCOUNTANTS" security group within Active Directory Users and Groups. 
+- On Domain-Controller Virtual Machine, add the non-administrator domain user (baboro.Jim in this case) within the "ACCOUNTANTS" security group within Active Directory Users and Groups. 
   
 </p>
 <br />
@@ -83,7 +83,7 @@ This project outlines the implementation of File Sharing and Permissions within 
 </p>
 <p>
 
--On Client-1 Virtual Machine, as the non-administrator, attempted to access the accounting folder again within (\\Domain-Controll). Observe that the user now has access to the folder since they are in the "ACCOUNTANTS" security group which has both read/write permissions.
+- On Client-1 Virtual Machine, as the non-administrator, attempted to access the accounting folder again within (\\Domain-Controll). Observe that the user now has access to the folder since they are in the "ACCOUNTANTS" security group which has both read/write permissions.
 
 </p>
 <br />
