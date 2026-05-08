@@ -62,7 +62,9 @@ This project outlines the implementation of File Sharing and Permissions within 
 <img width="2287" height="1223" alt="LAB7-ACCOUNTINGCLIENT" src="https://github.com/user-attachments/assets/6b6ec63d-df35-4ea7-89af-17971e6f4aa9" />
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+- On Client-1 Virtual Machine, as the non-administrator domain user, attempted to access the accounting folder. Note it fails, as this user has not been added to the "ACCOUNTANTS" group within the domain, therefore has no access to the accounting folder.
+
 </p>
 <br />
 
@@ -70,7 +72,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img width="2287" height="1223" alt="LAB7-ACCOUNTINGCLIENTFIX" src="https://github.com/user-attachments/assets/e5e86bf1-7531-4a1e-a256-014bb9b12d71" />
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+-On Domain-Controller Virtual Machine, add the non-administrator domain user (baboro.Jim in this case) within the "ACCOUNTANTS" security group within Active Directory Users and Groups. 
+  
 </p>
 <br />
 
@@ -78,6 +82,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img width="2287" height="1223" alt="LAB7-ACCOUNTINGCLIENTFINAL" src="https://github.com/user-attachments/assets/e3f74800-f7f6-4992-9918-66cc85a2bd9b" />
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+-On Client-1 Virtual Machine, as the non-administrator, attempted to access the accounting folder again within (\\Domain-Controll). Observe that the user now has access to the folder since they are in the "ACCOUNTANTS" security group which has both read/write permissions.
+
 </p>
 <br />
