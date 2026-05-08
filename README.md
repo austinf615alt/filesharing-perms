@@ -17,7 +17,7 @@ This project outlines the implementation of File Sharing and Permissions within 
 
 - Windows Server 2025 Datacenter X64 Gen2
 
-<h2>High-Level Deployment and Configuration Steps</h2>
+<h2>High-Level Configuration Steps</h2>
 
 - Step 1: Configured File Share Permissions
 - Step 2: Tested Access from Client Machine
