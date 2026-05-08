@@ -53,7 +53,7 @@ This project outlines the implementation of File Sharing and Permissions within 
 </p>
 <p>
 
-- On Domain-Controller Virtual Machine, as a domain administrator added and configured a security group called "ACCOUNTANTS" inside of Active Directory Users and Groups. On the accounting folder within the C:\ drive, configured sharing properties and added the group "ACCOUNTANTS" and gave Read/Write permissions.
+- On Domain-Controller Virtual Machine, as a domain administrator added and configured a security group called "ACCOUNTANTS" inside of Active Directory Users and Computers. On the accounting folder within the C:\ drive, configured sharing properties and added the group "ACCOUNTANTS" and gave Read/Write permissions.
 
 </p>
 <br />
